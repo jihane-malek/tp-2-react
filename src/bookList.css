@@ -1,0 +1,61 @@
+/* Center the table and give it a cool tone */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Styling the table for a clean, cool-toned look */
+  table {
+    width: 80%;
+    max-width: 600px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* Light cool blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Header row styling */
+  th {
+    text-align: left;
+    padding: 15px;
+    background-color: #3a7ca5; /* Medium cool blue */
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* Styling for table cells */
+  td {
+    padding: 12px;
+    color: #2b3a42; /* Dark cool gray */
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #d0e2f2;
+  }
+  
+  /* Alternate row colors for readability */
+  tr:nth-child(even) {
+    background-color: #f2faff; /* Very light blue for contrast */
+  }
+  
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #d0e2f2; /* Light blue-gray */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    table {
+      width: 90%;
+      font-size: 12px;
+    }
+    th, td {
+      padding: 10px;
+    }
+  }
+  
